@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Small Info Card</title>
+    <style>
+      .parent {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        color: var(--calcite-color-text-3);
+        font-family: var(--calcite-font-family);
+        font-size: var(--calcite-font-size-0);
+        font-weight: var(--calcite-font-weight-medium);
+        padding: 15px;
+        margin: 0 10vw;
+      }
+
+      .child {
+        display: flex;
+        flex-direction: row;
+        margin: 15px;
+      }
+
+      .themed-example calcite-small-info-card {
+        --calcite-card-corner-radius: var(--calcite-corner-radius-round);
+        --calcite-card-background-color: var(--calcite-color-foreground-2);
+        --calcite-card-border-color: var(--calcite-color-status-success);
+        --calcite-card-shadow: var(--calcite-shadow-md);
+        --calcite-card-accent-color-selected: purple;
+        --calcite-card-selection-background-color: lightgrey;
+        --calcite-card-selection-background-color-hover: grey;
+        --calcite-card-selection-background-color-active: red;
+        --calcite-card-selection-background-color-selected: pink;
+        --calcite-card-selection-icon-color: white;
+        --calcite-card-selection-icon-color-hover: yellow;
+        --calcite-card-selection-icon-color-selected: purple;
+      }
+    </style>
+    <script src="_assets/head.ts"></script>
+  </head>
+
+  <body>
+    <div class="parent">
+      <div class="child">
+        <calcite-small-info-card heading="Build Better">
+          <p>Lorem ipsum dolor sit amet</p>
+        </calcite-small-info-card>
+      </div>
+      <div class="child">
+        <calcite-small-info-card border>
+          <p>Lorem ipsum dolor sit amet</p>
+        </calcite-small-info-card>
+      </div>
+    </div>
+  </body>
+</html>
